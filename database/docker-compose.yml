@@ -5,7 +5,7 @@ services:
       context: ./Docker
       dockerfile: db.Dockerfile
     env_file:
-      - database.env
+      - ../database.env
     volumes:
       - ./var/pgdata:/var/lib/postgresql/data
     ports:
