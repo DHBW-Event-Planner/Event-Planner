@@ -64,3 +64,24 @@ VALUES
     (1,3,1,20,'Six Celebrations','2013-10-21','23:52:00','00:51:00'),
     (2,4,2,21,'Fourplan Event InStyle','2019-04-02','22:55:00','00:13:00'),
     (3,5,3,22,'Little Green Day','2014-08-31','17:45:00','12:12:00');
+
+--Visitors
+TRUNCATE visitor CASCADE;
+INSERT INTO visitor(visitor_firstName, visitor_middleName, visitor_lastName, visitor_birthDate, visitor_street, visitor_houseNumber, visitor_postCode, visitor_city)
+VALUES
+    ('Muriel','','Constantin','1996-11-12','Langenhorner Chaussee','54','83413','Fridolfing'),
+    ('Kalyan','','Augusta','1998-10-27','Grolmanstraße','91','28327','Bremen'),
+    ('Osvald','','Amalia','1975-07-04','Los-Angeles-Platz','94','21107','Hamburg'),
+    ('Dena','','Muhammed','1994-05-23','Waßmannsdorfer Chaussee','58','21037','Hamburg'),
+    ('Viachaslau','','Asa','1989-12-13','Alter Wall','63','63922','Kleinheubach'),
+    ('Bakhtiyar','','Leir','1984-09-12','Buelowstrasse','93','56729','Luxem'),
+    ('Anupama','','Eva','2003-07-28','Mellingburgredder','71','91771','Weißenberg'),
+    ('Valens','','Kadmos','1976-08-11','Leipziger Straße','39','34292','Ahnatal'),
+    ('Mar','','Amlaib','1995-08-11','Mollstrasse','10','65307','Bad Schwalbach'),
+    ('Johana','Mirella','Pasko','1996-02-26','Rathausstrasse','8','90711','Fürth'),
+    ('Krisyna','Stien','Phuc','1987-12-20','Michaelkrichstr.','21','58453','Witten Rüdinghausen'),
+    ('Florina',	'Svatava',	'Pliny','1974-08-02','Prenzlauer Allee','82','04183','Leipzig'),
+    ('Rudolf','Dieter','Müller','1978-09-07','Meininger Strasse','94','55776','Rückweiler'),
+    ('Helge','Kristina','Schaffner','1983-07-22','Platz der Republik','1','10557','Berlin'),
+    ('Henrick','David',	'Utz','2003-12-01','Bismarckstraße','1','68161','Mannheim');
+
