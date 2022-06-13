@@ -26,7 +26,7 @@ def get_all_from_table(tablename:str):
 def run_sql_command_one_result(sql_query:str):
     curs = get_connection()
     curs.execute(sql_query)
-    return curs.fetchone()
+    return curs.fetchall()
 
 
 if __name__ == "__main__":
