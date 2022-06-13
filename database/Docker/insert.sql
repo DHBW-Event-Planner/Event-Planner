@@ -65,7 +65,7 @@ VALUES
     (2,4,2,21,'Fourplan Event InStyle','2019-04-02','22:55:00','00:13:00'),
     (3,5,3,22,'Little Green Day','2014-08-31','17:45:00','12:12:00');
 
---Visitors
+--Visitor
 TRUNCATE visitor CASCADE;
 INSERT INTO visitor(visitor_firstName, visitor_middleName, visitor_lastName, visitor_birthDate, visitor_street, visitor_houseNumber, visitor_postCode, visitor_city)
 VALUES
@@ -85,3 +85,21 @@ VALUES
     ('Helge','Kristina','Schaffner','1983-07-22','Platz der Republik','1','10557','Berlin'),
     ('Henrick','David',	'Utz','2003-12-01','Bismarckstraße','1','68161','Mannheim');
 
+--ticket
+TRUNCATE ticket CASCADE;
+INSERT INTO ticket(event_id,ticket_id,ticket_price,ticket_seatNumber,ticket_type)
+VALUES
+     ('22','0',7.25,'211','General admission'),
+     ('21','1',59.74,'270','VIP'),
+     ('20','2',7.95,'48','Reserved seating'),
+     ('19','3',51.81,'409','Multi-day pass'),
+     ('18','4',75.94,'472','One-day pass'),
+     ('17','5',50.93,'111','Early bird discount'),
+     ('16','6',29.01,'61','Coded discount'),
+     ('15','7',75.06,'390','Tickets at the door'),
+     ('14','8',59.24,'267','General admission'),
+     ('13','9',39.83,'535','VIP'),
+     ('12','10',91.44,'281','Reserved seating'),
+     ('11','11',86.38,'119','Multi-day pass'),
+     ('10','12',3.82,'921','One-day pass'),
+     ('9','13',97.52,'230','Early bird discount');
