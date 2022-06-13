@@ -111,3 +111,14 @@ CREATE TABLE visitor(
     visitor_postCode VARCHAR(5) NOT NULL,
     visitor_city VARCHAR(100) NOT NULL
 );
+
+-- Table shopitems
+--Relations: NoRelations 
+--
+DROP TABLE IF EXISTS shopitems CASCADE;
+CREATE TABLE shopitems(
+    shopitems_name VARCHAR(100) NOT NULL,
+    shopitems_description TEXT(10000) NOT NULL,
+    shopitems_price DECIMAL NOT NULL,
+    shopitems_quantity  VARCHAR(100) NOT NULL
+);

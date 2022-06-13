@@ -103,3 +103,24 @@ VALUES
      ('11','11',86.38,'119','Multi-day pass'),
      ('10','12',3.82,'921','One-day pass'),
      ('9','13',97.52,'230','Early bird discount');
+
+--shopitems
+TRUNCATE shopitems CASCADE;
+INSERT INTO shopitems(shopitems_name,shopitems_description,shopitems_price,shopitems_quantity)
+VALUES
+     ('Hoodie','Hoodie with the logo printed on it',95.67,'150'),
+     ('Ballon','Colored balloon',61.29,'612'),
+     ('Beer','Beer',36.95,'117'),
+     ('Tattoos','Temporary tattoos for your skin',27.11,'798'),
+     ('Flag','Flags with the logo',23.75,'137'),
+     ('Fingerpaint','Paint for your fingers', '88.45','508'),
+     ('SR72 Blackbird','Stealthbomber',26.88,'336'),
+     ('Drawer', 'A Drawer to put you Blackbird',31.00,'644'),
+     ('Snail shell','Snail shell',71.80,'932'),
+     ('Rug', 'Rug with the face of the artist',71.80,'812'),
+     ('Matchbook','Matchbook to set the location',54.21,'80'),
+     ('Stick','Stick with a nice color',23.80,'681'),
+     ('Bottle of ink','if you need some ink we have it',4.5,'841'),
+     ('Sword','A sword to kill the artist, if his performance isnt good',81.38,'610'),
+     ('Child','If you need a child, buy it',31.20,'504'),
+     ('chicken','kfc isnt as good as our chicken',67.84,'312');
