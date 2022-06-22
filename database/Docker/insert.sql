@@ -64,3 +64,63 @@ VALUES
     (1,3,1,20,'Six Celebrations','2013-10-21','23:52:00','00:51:00'),
     (2,4,2,21,'Fourplan Event InStyle','2019-04-02','22:55:00','00:13:00'),
     (3,5,3,22,'Little Green Day','2014-08-31','17:45:00','12:12:00');
+
+--Visitor
+TRUNCATE visitor CASCADE;
+INSERT INTO visitor(visitor_firstName, visitor_middleName, visitor_lastName, visitor_birthDate, visitor_street, visitor_houseNumber, visitor_postCode, visitor_city)
+VALUES
+    ('Muriel','','Constantin','1996-11-12','Langenhorner Chaussee','54','83413','Fridolfing'),
+    ('Kalyan','','Augusta','1998-10-27','Grolmanstraße','91','28327','Bremen'),
+    ('Osvald','','Amalia','1975-07-04','Los-Angeles-Platz','94','21107','Hamburg'),
+    ('Dena','','Muhammed','1994-05-23','Waßmannsdorfer Chaussee','58','21037','Hamburg'),
+    ('Viachaslau','','Asa','1989-12-13','Alter Wall','63','63922','Kleinheubach'),
+    ('Bakhtiyar','','Leir','1984-09-12','Buelowstrasse','93','56729','Luxem'),
+    ('Anupama','','Eva','2003-07-28','Mellingburgredder','71','91771','Weißenberg'),
+    ('Valens','','Kadmos','1976-08-11','Leipziger Straße','39','34292','Ahnatal'),
+    ('Mar','','Amlaib','1995-08-11','Mollstrasse','10','65307','Bad Schwalbach'),
+    ('Johana','Mirella','Pasko','1996-02-26','Rathausstrasse','8','90711','Fürth'),
+    ('Krisyna','Stien','Phuc','1987-12-20','Michaelkrichstr.','21','58453','Witten Rüdinghausen'),
+    ('Florina',	'Svatava',	'Pliny','1974-08-02','Prenzlauer Allee','82','04183','Leipzig'),
+    ('Rudolf','Dieter','Müller','1978-09-07','Meininger Strasse','94','55776','Rückweiler'),
+    ('Helge','Kristina','Schaffner','1983-07-22','Platz der Republik','1','10557','Berlin'),
+    ('Henrick','David',	'Utz','2003-12-01','Bismarckstraße','1','68161','Mannheim');
+
+--ticket
+TRUNCATE ticket CASCADE;
+INSERT INTO ticket(event_id,ticket_id,ticket_price,ticket_seatNumber,ticket_type)
+VALUES
+     ('22','0',7.25,'211','General admission'),
+     ('21','1',59.74,'270','VIP'),
+     ('20','2',7.95,'48','Reserved seating'),
+     ('19','3',51.81,'409','Multi-day pass'),
+     ('18','4',75.94,'472','One-day pass'),
+     ('17','5',50.93,'111','Early bird discount'),
+     ('16','6',29.01,'61','Coded discount'),
+     ('15','7',75.06,'390','Tickets at the door'),
+     ('14','8',59.24,'267','General admission'),
+     ('13','9',39.83,'535','VIP'),
+     ('12','10',91.44,'281','Reserved seating'),
+     ('11','11',86.38,'119','Multi-day pass'),
+     ('10','12',3.82,'921','One-day pass'),
+     ('9','13',97.52,'230','Early bird discount');
+
+--shopitems
+TRUNCATE shopitems CASCADE;
+INSERT INTO shopitems(shopitems_name,shopitems_description,shopitems_price,shopitems_quantity)
+VALUES
+     ('Hoodie','Hoodie with the logo printed on it',95.67,'150'),
+     ('Ballon','Colored balloon',61.29,'612'),
+     ('Beer','Beer',36.95,'117'),
+     ('Tattoos','Temporary tattoos for your skin',27.11,'798'),
+     ('Flag','Flags with the logo',23.75,'137'),
+     ('Fingerpaint','Paint for your fingers', '88.45','508'),
+     ('SR72 Blackbird','Stealthbomber',26.88,'336'),
+     ('Drawer', 'A Drawer to put you Blackbird',31.00,'644'),
+     ('Snail shell','Snail shell',71.80,'932'),
+     ('Rug', 'Rug with the face of the artist',71.80,'812'),
+     ('Matchbook','Matchbook to set the location',54.21,'80'),
+     ('Stick','Stick with a nice color',23.80,'681'),
+     ('Bottle of ink','if you need some ink we have it',4.5,'841'),
+     ('Sword','A sword to kill the artist, if his performance isnt good',81.38,'610'),
+     ('Child','If you need a child, buy it',31.20,'504'),
+     ('chicken','kfc isnt as good as our chicken',67.84,'312');
