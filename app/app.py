@@ -24,10 +24,7 @@ def show_events():
         artist = (run_sql_command_one_result(f'SELECT * FROM artist WHERE artist.artist_id = {event["artist_id"]}')[0])
         artist = {"artist_id": artist[0], "artist_bandname": artist[1], "artist_membersize": artist[2], "artist_founddate": artist[3]}
         result_data = [event, location, artist]
-        print(location)
-        print(artist)
         event_object.append(result_data)
-    print(event_object)
     return render_template('events.html', events_list=event_object)
 
 
